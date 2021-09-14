@@ -36,7 +36,7 @@ class AboutProxyObjectProject < Neo::Koan
   def test_tv_methods_still_perform_their_function
     tv = Proxy.new(Television.new)
 
-    tv.channel = 10
+     tv.channel = 10
     tv.power
 
     assert_equal 10, tv.channel
